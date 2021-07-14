@@ -1,7 +1,7 @@
 const utils = require("../utils");
 
 const register = async ({ sql, getConnection }) => {
-    const dataQueries = await utils.dataQueries("events");
+    const dataQueries = await utils.loadQueries("events");
 
     const getEvents = async userId => {
         const connection = await getConnection();

@@ -14,7 +14,7 @@ const client = async (server, config) => {
         }
     };
 
-    const getConnection = async = () => {
+    const getConnection = async () => {
         try {
             if (pool) {
                 return pool;
