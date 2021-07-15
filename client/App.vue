@@ -204,7 +204,7 @@
             },
 
             formatDate(date) {
-                return date ? moment.utc(date).format("MMM D, YYYY" : "";
+                return date ? moment.utc(date).format("MMM D, YYYY") : "";
             },
 
             formatTime(time) {
@@ -248,11 +248,11 @@
 <style lang="css">
 
     #app h3 {
-        font-size: 3em,
-        background-color: black
+        font-size: 3em;
+        background-color: black;
     }
     .datetime-label {
-        color: gray,
+        color: gray;
         font-size: 0.5em;
     }
 

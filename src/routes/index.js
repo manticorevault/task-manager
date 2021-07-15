@@ -10,7 +10,7 @@ module.exports.register = async server => {
         method: "GET",
         path:"/",
         handler: async(request, h) => {
-            return h.view("index", { title: "Home" });
+            return h.view("index", { title: "Home", message: "Welcome to TaskManager!" });
         },
         options: {
             auth: {
