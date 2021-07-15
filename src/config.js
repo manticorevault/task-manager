@@ -6,6 +6,7 @@ const {
     PORT,
     HOST,
     HOST_URL,
+    COOKIE_ENCRYPT_PWD,
     SQL_SERVER,
     SQL_DATABASE,
     SQL_USER,
@@ -18,6 +19,7 @@ module.exports = {
     port: PORT,
     host: HOST,
     url: HOST_URL,
+    cookiePass: COOKIE_ENCRYPT_PWD,
     sql: {
         server: SQL_SERVER,
         database: SQL_DATABASE,
