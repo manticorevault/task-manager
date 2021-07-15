@@ -15,5 +15,7 @@ module.exports.register = async server => {
     server.views({
         engines: { ejs },
         relativeTo: __dirname,
-    })
+        path: "../templates",
+        layout: true
+    });
 }
