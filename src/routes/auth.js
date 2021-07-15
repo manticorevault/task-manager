@@ -33,7 +33,7 @@ const authCallback = {
 
 const logout = {
     method: "GET",
-    path: "logout",
+    path: "/logout",
     handler: (request, h) => {
         try {
 

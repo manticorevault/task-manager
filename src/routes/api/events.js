@@ -25,11 +25,11 @@ module.exports.register = async server => {
                     console.log(err)
                 }
             }
-    })
+    });
 
     server.route({
         method: "POST",
-        path: "api/events",
+        path: "/api/events",
         options: {
             auth: { mode: "try" }
         },
@@ -63,7 +63,7 @@ module.exports.register = async server => {
 
     server.route({
         method: "PUT",
-        path: "api/events/{id}",
+        path: "/api/events/{id}",
         options: {
             auth: { mode: "try" }
         },

@@ -4,7 +4,7 @@ const auth = require("./auth");
 module.exports.register = async server => {
 
     await api.register(server);
-    await api.register(auth);
+    await auth.register(server);
 
     server.route({
         method: "GET",
@@ -27,6 +27,9 @@ module.exports.register = async server => {
             directory: {
                 path: "dist"
             }
+        }, 
+        options: {
+            auth: false
         }
     });
 };

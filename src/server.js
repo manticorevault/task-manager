@@ -13,7 +13,7 @@ const app = async config => {
     await plugins.register(server);
 
     await routes.register(server);
-    return server 
+    return server;
 
 }
 
