@@ -10,5 +10,7 @@ Vue.use(Datetime);
 
 new Vue({
 	el: "#app",
-	render: h => h(App)
+	router,
+	render: h => h(App),
+	components: { App }
 });
