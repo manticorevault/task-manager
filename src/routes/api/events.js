@@ -1,3 +1,5 @@
+const boom = require("@hapi/boom");
+
 module.exports.register = async server => {
     server.route({
         method: "GET",
@@ -8,10 +10,13 @@ module.exports.register = async server => {
         handler: 
             async request => {
                 try {
+                    if (!request.auth.isAuthenticated) {
+                        return boom.unauthorized();
+                    }
+
                     const db = request.server.plugins.sql.client;
 
-                    // Hardcoded userId for tests
-                    const userId ="testUser";
+                    const userId = request.auth.credentials.profile.id;
                     const res = await db.events.getEvents(userId);
 
                     return res.recordset;
