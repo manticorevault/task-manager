@@ -12,6 +12,13 @@
 npm install
 ```
 
+## Config
+- Create a free account on Okta Developer (https://developer.okta.com/)
+- Create a new App Integration, using OpenID Connect as Sign-in Method
+- Define the application type as Web Application
+- Save the Default
+- Copy your Client ID and Client Secret and use them in your .env file
+
 ## Usage
 
 ```sh
