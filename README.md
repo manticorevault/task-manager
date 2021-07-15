@@ -18,6 +18,7 @@ npm install
 - Define the application type as Web Application
 - Save the Default
 - Copy your Client ID and Client Secret and use them in your .env file
+- Start SQL Server in a docker container (https://hub.docker.com/_/microsoft-mssql-server)
 
 ## Usage
 
@@ -27,7 +28,7 @@ npm run dev
 
 ## Author
 
-* Website: arturserra.com
+* Website: https://arturserra.com
 * Github: [@manticorevault](https://github.com/manticorevault)
 
 ## Show your support
