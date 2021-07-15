@@ -7,15 +7,15 @@ const loadQueries = async dirName => {
     const files = await fs.readdir(filePath)
 
     const dataFiles = files.filter( f => f.endsWith(".sql"))
-    const dataQueries = {};
+    const sqlQueries = {};
 
     for (const dataFile of dataFiles) {
         const singleQuery = fs.readFileSync(join(filePath, dataFile), { encoding: "UTF-8" });
         
-        dataQueries[dataFile.replace(".sql", "")] = singleQuery;
+        sqlQueries[dataFile.replace(".sql", "")] = singleQuery;
     }
 
-    return dataQueries;
+    return sqlQueries;
 }
 
 module.exports = { loadQueries };
