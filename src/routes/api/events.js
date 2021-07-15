@@ -2,6 +2,9 @@ module.exports.register = async server => {
     server.route({
         method: "GET",
         path: "/api/events",
+        options: {
+            auth: { mode: try }
+        },
         handler: 
             async request => {
                 try {
